@@ -8,7 +8,7 @@ Vagrant::Config.run do |config|
 	config.vm.forward_port 22, 2222
 
 	# Name: F.T.P.
-	# Link: https://en.wikipedia.org/wiki/File_Transfer_Protocol
+	# Link: https://www.wikipedia.org/wiki/File_Transfer_Protocol
 	config.vm.forward_port 21, 2121
 
 	# Name: Air Time: S.A.B.S.
