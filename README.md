@@ -8,3 +8,8 @@ Virtual machine install script's.
     $ cd Vagrant
     $ vagrant up
     $ fab vagrant setup
+
+License
+-------
+
+    [Lesser General Public License]https://github.com/GitOrganization/Vagrant/blob/master/LICENSE
