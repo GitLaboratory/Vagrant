@@ -3,7 +3,8 @@ Vagrant
 
 Virtual machine install script's.
 ---------------------------------
-* O.S.:
-Ubuntu
-* Version:
-12.04
+
+$ git clone https://github.com/GitOrganization/Vagrant.git
+$ cd Vagrant
+$ vagrant up
+$ fab vagrant setup
