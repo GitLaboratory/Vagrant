@@ -3,7 +3,7 @@ Vagrant
 
 Virtual machine install script's.
 ---------------------------------
-O.S.:
+* O.S.:
   Ubuntu
-Version:
+* Version:
   12.04
