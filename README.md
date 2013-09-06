@@ -12,4 +12,4 @@ Virtual machine install script's.
 License
 -------
 
-    ["Lesser General Public License"](https://github.com/GitOrganization/Vagrant/blob/master/LICENSE)
+["Lesser General Public License"](https://github.com/GitOrganization/Vagrant/blob/master/LICENSE)
