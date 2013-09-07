@@ -80,6 +80,7 @@ def setup_audio():
 ##########
 def setup():
 	""" Deploy basic package's. """
+	connect()
 	setup_update()
 	setup_upgrade()
 	setup_locale()
