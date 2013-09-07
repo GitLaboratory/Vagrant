@@ -59,6 +59,7 @@ def setup_locale():
 
 	sudo('locale-gen en_US.UTF-8')
 	sudo('dpkg-reconfigure locales')
+	sudo('export LC_ALL="en_US.UTF-8"')
 
 #############################
 # Setup "Air Time: S.A.B.S. #
