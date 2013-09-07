@@ -18,6 +18,33 @@ Virtual machine install script's
     $ vagrant up
     $ fab connect setup
 
+Management Virtual Machine
+--------------------------
+
+Suspend...
+
+    $ vagrant suspend
+
+Resume...
+
+    $ vagrant resume
+
+Stop...
+
+    $ vagrant halt
+
+Start...
+
+    $ vagrant up
+
+Status...
+
+    $ vagrant status
+
+Stop and delete all the virtual machine files.
+
+    $ vagrant destroy
+
 License
 -------
 
