@@ -71,7 +71,7 @@ def setup_audio():
 	sudo('echo "# Link: http://www.sourcefabric.org/" >> "/etc/apt/sources.list"')
 	sudo('echo "deb http://apt.sourcefabric.org/ precise main" >> "/etc/apt/sources.list"')
 	sudo('apt-get --yes update')
-	sudo('apt-get --yes install sourcefabric-keyring')
+	sudo('apt-get --force-yes -y install sourcefabric-keyring')
 	sudo('apt-get --yes update')
 	sudo('apt-get --yes install airtime')
 
