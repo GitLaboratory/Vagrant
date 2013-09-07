@@ -1,6 +1,6 @@
 Vagrant::Config.run do |config|
 	config.vm.box = 'Vagrant'
-	config.vm.box_url = 'https://dl.dropboxusercontent.com/u/67225617/lxc-vagrant/lxc-wheezy64-puppet3-2013-07-27.box'
+	config.vm.box_url = 'http://files.vagrantup.com/precise32.box'
 	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
 	# Multiple Network's.
