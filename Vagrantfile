@@ -1,6 +1,6 @@
 Vagrant::Config.run do |config|
 	config.vm.box = 'Vagrant'
-	config.vm.box_url = 'http://files.vagrantup.com/precise32.box'
+	config.vm.box_url = 'http://dl.dropbox.com/u/13510779/lxc-raring-amd64-2013-07-12.box'
 	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
 	# Multiple Network's.
