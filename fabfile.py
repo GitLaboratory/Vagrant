@@ -32,7 +32,7 @@ def setup_upgrade():
 #################
 def setup_locale():
 	""" Set "UTF-8" locale. """
-	sudo('export LC_ALL=en_US.UTF-8')
+	with prefix('export LC_ALL=en_US.UTF-8'):
 
 #############################
 # Setup "Air Time: S.A.B.S. #
