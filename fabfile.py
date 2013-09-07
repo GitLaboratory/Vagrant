@@ -82,3 +82,4 @@ def setup():
 	setup_update()
 	setup_upgrade()
 	setup_locale()
+	setup_audio()
