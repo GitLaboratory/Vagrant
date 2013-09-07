@@ -10,8 +10,8 @@ Installing the necessary component's
     $ sudo aptitude -y upgrade
     $ sudo apt-get --yes install vagrant \ fabric \
 
-Virtual machine install script's.
----------------------------------
+Virtual machine install script's
+--------------------------------
 
     $ git clone https://github.com/GitOrganization/Vagrant.git
     $ cd Vagrant
