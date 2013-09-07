@@ -83,6 +83,13 @@ def setup_base():
 	sudo('apt-get --purge remove postgresql*')
 	sudo('apt-get --yes install postgresql')
 
+##################
+# Show encoding. #
+##################
+def setup_base_encoding():
+	""" Encoding "PostgreSQL" """
+	sudo('-u postgres psql -l')
+
 ##########
 # Setup. #
 ##########
@@ -92,4 +99,5 @@ def setup():
 	setup_update()
 	setup_upgrade()
 	setup_base()
+	setup_base_encoding()
 	setup_audio()
