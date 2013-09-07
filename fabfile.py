@@ -74,6 +74,15 @@ def setup_audio():
 	sudo('apt-get --yes update')
 	sudo('apt-get --yes install airtime')
 
+##############################
+# Setup install "PostgreSQL" #
+##############################
+def setup_base():
+	""" Install data base server. """
+	sudo('apt-get --yes install postgresql')
+	sudo('apt-get --purge remove postgresql*')
+	sudo('apt-get --yes install postgresql')
+
 ##########
 # Setup. #
 ##########
@@ -82,4 +91,5 @@ def setup():
 	setup_locale()
 	setup_update()
 	setup_upgrade()
+	setup_base()
 	setup_audio()
