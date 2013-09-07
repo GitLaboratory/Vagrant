@@ -4,7 +4,7 @@ Vagrant::Config.run do |config|
 	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
 	# Multiple Network's.
-	config.vm.network :hostonly, "0.0.0.0", :netmask => "255.255.255.0"
+	#config.vm.network :hostonly, "0.0.0.0", :netmask => "255.255.255.0"
 
 	# Name: Secure Shell: N.P.
 	# Link: https://www.wikipedia.org/wiki/Secure_Shell
