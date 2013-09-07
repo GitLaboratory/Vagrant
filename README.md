@@ -1,7 +1,7 @@
 Vagrant
 =======
 
-Vagrant is open-source software for creating and configuring virtual development environments. It can be considered a wrapper around VirtualBox and configuration management software such as Chef, Salt and Puppet. Although written in Ruby, it is usable in projects written in other languages such as PHP, Python, Java, and C#.
+Vagrant is open source software for creating and configuring virtual development environment's. It can be considered a wrapper around Virtual Box and configuration management software such as Chef, Salt and Puppet. Although written in Ruby, it is usable in projects written in other language's such as P.H.P., Python, Java, and C#.
 
 Installing the necessary component's
 ------------------------------------
