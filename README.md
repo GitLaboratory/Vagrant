@@ -4,8 +4,11 @@ Vagrant
 Install component's
 -------------------
 
-    $ sudo apt-get --yes install vagrant /
-    fabric /
+    $ sudo apt-get --yes update
+    $ sudo apt-get --yes upgrade
+    $ sudo aptitude -y update
+    $ sudo aptitude -y upgrade
+    $ sudo apt-get --yes install vagrant \ fabric \
 
 Virtual machine install script's.
 ---------------------------------
