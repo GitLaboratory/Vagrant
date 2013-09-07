@@ -78,7 +78,7 @@ def setup_audio():
 ##############################
 def setup_base():
 	""" Install data base server. """
-	with prefix('export LC_ALL=en_US.UTF-8'):
+   with prefix('export LC_ALL=en_US.UTF-8'):
 	sudo('apt-get --yes install libossp-uuid16')
 	sudo('apt-get --yes install postgresql')
 	sudo('apt-get --yes install postgresql-client-9.1')
