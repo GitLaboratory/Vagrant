@@ -79,11 +79,9 @@ def setup_audio():
 def setup_base():
 	""" Install data base server. """
 	prefix('export LC_ALL=en_US.UTF-8'):
-	sudo('apt-get --yes install libossp-uuid16')
 	sudo('apt-get --yes install postgresql')
-	sudo('apt-get --yes install postgresql-client-9.1')
-	sudo('apt-get --yes install postgresql-9.1')
-	sudo('apt-get --yes install postgresql-contrib-9.1')
+	sudo('apt-get --purge --yes remove postgresql*')
+	sudo('apt-get --yes install postgresql')
 
 ##################
 # Show encoding. #
@@ -91,6 +89,13 @@ def setup_base():
 def setup_base_encoding():
 	""" Encoding "PostgreSQL" """
 	sudo('sudo -u postgres psql -c "SHOW SERVER_ENCODING"')
+
+#######################
+# Web server "Apache" #
+#######################
+def setup_server()
+	""" Setting's host. """
+	sudo('mv "/etc/apache2/sites-aenabled/000-default" "/etc/apache2/sites-aenabled/"')
 
 ##########
 # Setup. #
@@ -103,3 +108,4 @@ def setup():
 	setup_base()
 	setup_base_encoding()
 	setup_audio()
+	setup_server()
