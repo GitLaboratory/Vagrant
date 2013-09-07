@@ -60,6 +60,22 @@ def setup_locale():
 	sudo('locale-gen en_US.UTF-8')
 	sudo('dpkg-reconfigure locales')
 
+#############################
+# Setup "Air Time: S.A.B.S. #
+#############################
+def setup_audio():
+	""" Install "Air Time: S.A.B.S. """
+	sudo('echo "" >> "/etc/apt/sources.list"')
+	sudo('echo "# Name: Air Time: S.A.B.S." >> "/etc/apt/sources.list"')
+	sudo('echo "# Link: http://www.sourcefabric.org/" >> "/etc/apt/sources.list"')
+	sudo('echo "deb http://apt.sourcefabric.org/ precise main" >> "/etc/apt/sources.list"')
+	sudo('apt-get --yes update')
+	sudo('apt-get --yes upgrade')
+	sudo('apt-get install sourcefabric-keyring')
+	sudo('apt-get --yes update')
+	sudo('apt-get --yes upgrade')
+	sudo('apt-get --yes install airtime')
+
 ##########
 # Setup. #
 ##########
