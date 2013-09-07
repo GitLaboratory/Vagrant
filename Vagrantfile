@@ -3,6 +3,9 @@ Vagrant::Config.run do |config|
 	config.vm.box_url = 'http://files.vagrantup.com/precise32.box'
 	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
+	# Multiple Network's.
+	config.vm.network :hostonly, "0.0.0.0", :netmask => "255.255.255.0"
+
 	# Name: Secure Shell: N.P.
 	# Link: https://www.wikipedia.org/wiki/Secure_Shell
 	config.vm.forward_port 22, 2222
