@@ -96,6 +96,7 @@ def setup_base_encoding():
 def setup_server():
 	""" Setting's host. """
 	sudo('mv "/etc/apache2/sites-aenabled/000-default" "/etc/apache2/sites-aenabled/"')
+	sudo('service apache2 restart')
 
 ##########
 # Setup. #
