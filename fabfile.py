@@ -49,7 +49,7 @@ def setup_locale():
 	sudo('echo "LC_ALL=en_US.UTF-8" >> "/etc/bash.bashrc"')
 
 	sudo('echo "" > "/etc/default/locale"')
-	sudo('echo "" >> "/etc/default/locale"')
+	"""sudo('echo "" >> "/etc/default/locale"')"""
 	sudo('echo "################" >> "/etc/default/locale"')
 	sudo('echo "# Charset set. #" >> "/etc/default/locale"')
 	sudo('echo "################" >> "/etc/default/locale"')
@@ -80,7 +80,7 @@ def setup_audio():
 ##########
 def setup():
 	""" Deploy basic package's. """
+	setup_locale()
 	setup_update()
 	setup_upgrade()
-	setup_locale()
 	setup_audio()
