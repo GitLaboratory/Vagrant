@@ -54,8 +54,6 @@ def setup_audio():
 def setup_base():
 	""" Install data base server. """
 	sudo('apt-get --yes install postgresql')
-	sudo('apt-get --purge --yes remove "postgresql*"')
-	sudo('apt-get --yes install postgresql')
 
 ##################
 # Show encoding. #
