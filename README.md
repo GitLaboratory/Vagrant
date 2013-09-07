@@ -37,6 +37,10 @@ Start...
 
     $ vagrant up
 
+Restart...
+
+    $ vagrant reload
+
 Status...
 
     $ vagrant status
