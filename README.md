@@ -10,9 +10,7 @@ Installing the necessary component's
     $ sudo apt-get --yes upgrade
     $ sudo aptitude -y update
     $ sudo aptitude -y upgrade
-    $ sudo apt-get --yes install vagrant   -
-    $ sudo apt-get --yes install fabric    -
-    $ sudo apt-get --yes install git       -
+    $ sudo apt-get --yes install vagrant fabric git
 
 Virtual machine install script's
 --------------------------------
