@@ -1,8 +1,8 @@
 Vagrant
 =======
 
-Install component's
--------------------
+Installing the necessary component's
+------------------------------------
 
     $ sudo apt-get --yes update
     $ sudo apt-get --yes upgrade
