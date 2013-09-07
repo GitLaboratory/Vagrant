@@ -58,7 +58,6 @@ def setup_locale():
 
 	sudo('locale-gen en_US.UTF-8')
 	sudo('dpkg-reconfigure locales')
-	sudo('export LC_ALL="en_US.UTF-8"')
 
 #############################
 # Setup "Air Time: S.A.B.S. #
@@ -79,16 +78,19 @@ def setup_audio():
 ##############################
 def setup_base():
 	""" Install data base server. """
+	with prefix('export LC_ALL=en_US.UTF-8'):
+	sudo('apt-get --yes install libossp-uuid16')
 	sudo('apt-get --yes install postgresql')
-	sudo('apt-get --purge --yes remove postgresql*')
-	sudo('apt-get --yes install postgresql')
+	sudo('apt-get --yes install postgresql-client-9.1')
+	sudo('apt-get --yes install postgresql-9.1')
+	sudo('apt-get --yes install postgresql-contrib-9.1')
 
 ##################
 # Show encoding. #
 ##################
 def setup_base_encoding():
 	""" Encoding "PostgreSQL" """
-	sudo('-u postgres psql -l')
+	sudo('sudo -u postgres psql -c "SHOW SERVER_ENCODING"')
 
 ##########
 # Setup. #
