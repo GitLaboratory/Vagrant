@@ -48,12 +48,13 @@ def setup_locale():
 	sudo('echo "LANG=en_US.UTF-8" >> "/etc/bash.bashrc"')
 	sudo('echo "LC_ALL=en_US.UTF-8" >> "/etc/bash.bashrc"')
 
+	sudo('echo "" > ""')
 	sudo('echo "" >> "/etc/bash.bashrc"')
 	sudo('echo "################" >> "/etc/bash.bashrc"')
 	sudo('echo "# Charset set. #" >> "/etc/bash.bashrc"')
 	sudo('echo "################" >> "/etc/bash.bashrc"')
 	sudo('echo "" >> "/etc/bash.bashrc"')
-	sudo('echo "LC_ALL=en_US.UTF-8" > "/etc/default/locale"')
+	sudo('echo "LC_ALL=en_US.UTF-8" >> "/etc/default/locale"')
 	sudo('echo "LANG=en_US.UTF-8" >> "/etc/default/locale"')
 
 	sudo('locale-gen en_US.UTF-8')
