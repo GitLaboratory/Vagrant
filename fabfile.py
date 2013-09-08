@@ -60,6 +60,13 @@ def setup_base():
         sudo('apt-get --yes install postgresql-contrib-9.1')
         sudo('apt-get --yes install libossp-uuid16')
 
+################
+# Show locale. #
+################
+def setup_base_locale():
+	""" Locale data base server. """
+	sudo('sudo -u postgres locale')
+
 ##################
 # Show encoding. #
 ##################
@@ -83,6 +90,7 @@ def setup():
 	setup_update()
 	setup_upgrade()
 	setup_base()
+	setup_base_locale()
 	setup_base_encoding()
 	setup_audio()
 	setup_server()
