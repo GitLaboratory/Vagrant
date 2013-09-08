@@ -1,6 +1,13 @@
 Vagrant::Config.run do |config|
 	config.vm.box = 'Vagrant'
+	# O.S.: Ubuntu
+	# Version: 12.04
+	# Bit: 32
 	config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+	# O.S.: Ubuntu
+	# Version: 12.04
+	# Bit: 64
+	#config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
 	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
 	# Multiple Network's.
