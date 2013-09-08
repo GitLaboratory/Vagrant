@@ -55,10 +55,10 @@ def setup_base():
         """ Install data base server. """
     with prefix('export LC_ALL=en_US.UTF-8'):
         sudo('apt-get --yes install postgresql')
-        sudo('apt-get --yes install postgresql')
-        sudo('apt-get --yes install postgresql')
-        sudo('apt-get --yes install postgresql')
-        sudo('apt-get --yes install postgresql')
+        sudo('apt-get --yes install postgresql-9.1')
+        sudo('apt-get --yes install postgresql-client-9.1')
+        sudo('apt-get --yes install postgresql-contrib-9.1')
+        sudo('apt-get --yes install libossp-uuid16')
 
 ##################
 # Show encoding. #
