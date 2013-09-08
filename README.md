@@ -47,7 +47,7 @@ Status...
 
 Stop and delete all the virtual machine file's.
 
-    $ vagrant destroy; cd ..; rm -r ".vagrant.d" "VirtualBox VMs" ".VirtualBox" "Vagrant"
+    $ vagrant destroy
 
 License
 -------
