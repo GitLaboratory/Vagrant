@@ -52,4 +52,4 @@ Stop and delete all the virtual machine file's.
 License
 -------
 
- * [Lesser General Public License](https://github.com/GitOrganization/Vagrant/blob/master/LICENSE)
+ * [Lesser General Public License](LICENSE)
