@@ -52,7 +52,6 @@ def setup_audio():
 # Setup install "PostgreSQL" #
 ##############################
 def setup_base():
-        """ Install data base server. """
     with prefix('export LC_ALL=en_US.UTF-8'):
         sudo('apt-get --yes install postgresql')
         sudo('apt-get --yes install postgresql-9.1')
