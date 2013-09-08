@@ -64,7 +64,7 @@ def setup_base():
 # Show encoding. #
 ##################
 def setup_base_encoding():
-	""" Encoding "PostgreSQL" """
+	""" Encoding data base server. """
 	sudo('sudo -u postgres psql -c "SHOW SERVER_ENCODING"')
 
 #######################
