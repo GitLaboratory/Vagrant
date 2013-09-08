@@ -4,11 +4,11 @@ Vagrant::Config.run do |config|
 	# O.S.: Ubuntu
 	# Version: 12.04
 	# Bit: 32
-	config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+	#config.vm.box_url = 'http://files.vagrantup.com/precise32.box'
 	# O.S.: Ubuntu
 	# Version: 12.04
 	# Bit: 64
-	#config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+	config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
 
 	# Multiple Network's.
 	#config.vm.network :hostonly, "0.0.0.0", :netmask => "255.255.0.0"
