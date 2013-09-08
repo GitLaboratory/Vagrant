@@ -101,6 +101,19 @@ def setup_server():
 	sudo('mv "/etc/apache2/sites-enabled/000-default" "/etc/apache2/"')
 	sudo('invoke-rc.d apache2 restart', pty=False)
 
+#######################
+# Istall time server. #
+#######################
+def setup_time():
+	""" Install network time protocol server. """
+	sudo('apt-get install ntp')
+
+######################
+# Show current time. #
+######################
+def setup_time_current():
+	sudo('sudo date')
+
 ##########
 # Setup. #
 ##########
@@ -112,5 +125,7 @@ def setup():
 	setup_base()
 	setup_base_locale()
 	setup_base_encoding()
+	setup_time()
+	setup_time_current()
 	setup_audio()
 	setup_server()
