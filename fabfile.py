@@ -32,7 +32,27 @@ def setup_upgrade():
 #################
 def setup_locale():
 	""" Set "UTF-8" locale. """
-	sudo('export LC_ALL=en_US.UTF-8')
+	sudo('echo "###############" > "/var/lib/locales/supported.d/local"')
+	sudo('echo "# Set locale. #" >> "/var/lib/locales/supported.d/local"')
+	sudo('echo "###############" >> "/var/lib/locales/supported.d/local"')
+	sudo('echo "en_US.UTF-8 UTF-8" >> "/var/lib/locales/supported.d/local"')
+
+	sudo('echo "" >> "/etc/bash.bashrc"')
+	sudo('echo "###############" >> "/etc/bash.bashrc"')
+	sudo('echo "# Set locale. #" >> "/etc/bash.bashrc"')
+	sudo('echo "###############" >> "/etc/bash.bashrc"')
+	sudo('echo "LANG=en_US.UTF-8" >> "/etc/bash.bashrc"')
+	sudo('echo "LC_ALL=en_US.UTF-8" >> "/etc/bash.bashrc"')
+	sudo('echo "LANGUAGE=en_US.UTF-8" >> "/etc/bash.bashrc"')
+
+	sudo('echo "###############" > "/etc/default/locale"')
+	sudo('echo "# Set locale. #" >> "/etc/default/locale"')
+	sudo('echo "###############" >> "/etc/default/locale"')
+	sudo('echo "LANG=en_US.UTF-8" >> "/etc/default/locale"')
+	sudo('echo "LC_ALL=en_US.UTF-8" >> "/etc/default/locale"')
+
+	sudo('locale-gen en_US.UTF-8')
+	sudo('dpkg-reconfigure locales')
 
 #############################
 # Setup "Air Time: S.A.B.S. #
@@ -86,6 +106,7 @@ def setup_server():
 ##########
 def setup():
 	""" Deploy basic package's. """
+	setup_locale()
 	setup_update()
 	setup_upgrade()
 	setup_base()
