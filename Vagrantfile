@@ -8,7 +8,7 @@ Vagrant::Config.run do |config|
 
 	# Name: Secure Shell: N.P.
 	# Link: https://www.wikipedia.org/wiki/Secure_Shell
-	config.vm.forward_port 22, 2222
+	#config.vm.forward_port 22, 2222
 
 	# Name: F.T.P.
 	# Link: https://www.wikipedia.org/wiki/File_Transfer_Protocol
