@@ -1,5 +1,6 @@
 Vagrant::Config.run do |config|
 	config.vm.box = 'Vagrant'
+	config.vm.host_name = 'Vagrant-Virtual-Machine'
 	# O.S.: Ubuntu
 	# Version: 12.04
 	# Bit: 32
@@ -8,7 +9,6 @@ Vagrant::Config.run do |config|
 	# Version: 12.04
 	# Bit: 64
 	#config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
-	config.vm.host_name = 'Vagrant-Virtual-Machine'
 
 	# Multiple Network's.
 	#config.vm.network :hostonly, "0.0.0.0", :netmask => "255.255.0.0"
