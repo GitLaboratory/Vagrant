@@ -6,9 +6,17 @@ Vagrant is open source software for creating and configuring virtual development
 Installing the necessary component's
 ------------------------------------
 
+    Install in O.S. Ubuntu, Version 12.04 and O.S. Ubuntu, Version 13.10
     $ sudo apt-get --yes update; sudo apt-get --yes upgrade
     $ sudo aptitude -y update; sudo aptitude -y upgrade
     $ sudo apt-get --yes install vagrant fabric git
+
+    Install in O.S. Debian, Version 7.3
+    $ sudo apt-get --yes update; sudo apt-get --yes upgrade
+    $ sudo aptitude -y update; sudo aptitude -y upgrade
+    $ sudo apt-get --yes install python-pip;
+    $ sudo pip install fabric
+    $ sudo apt-get --yes install vagrant git
 
 Virtual machine install script's
 --------------------------------
